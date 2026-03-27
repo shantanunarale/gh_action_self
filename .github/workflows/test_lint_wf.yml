@@ -1,9 +1,5 @@
 name: lint_test_wf
-on: 
-  - workflow_dispatch
-  - issues:
-      types: [opened, edited, closed]
-  - push
+on: [workflow_dispatch, push, issues]
 jobs:
   test_job:
     runs-on: ubuntu-latest
